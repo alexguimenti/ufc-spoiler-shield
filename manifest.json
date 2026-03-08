@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "UFC Spoiler Blocker - Paramount+",
+  "description": "Hides UFC fight durations and result descriptions on Paramount+ to prevent spoilers",
+  "version": "1.0",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.paramountplus.com/*"
+      ],
+      "css": ["hide-duration.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

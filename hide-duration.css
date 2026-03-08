@@ -1,0 +1,33 @@
+/* === UFC Spoiler Blocker - Paramount+ === */
+
+/* 1. Fight duration in episode list (e.g. "18M", "25M", "1H") */
+span[itemprop="duration"] {
+  display: none !important;
+}
+
+/* 2. Fight duration in video page header (e.g. "24M" next to the date) */
+.lockup-info__details-eyebrow > span:first-child {
+  display: none !important;
+}
+
+/* 3. Result/spoiler description in episode list */
+.description-wrapper {
+  display: none !important;
+}
+
+/* 4. Result/spoiler description in video page header */
+.lockup-info__details-episode-description {
+  display: none !important;
+}
+
+/* 5. Total duration in video player bar (e.g. "24:00" on the right side) */
+.end-time,
+.vjs-duration,
+.vjs-remaining-time,
+[class*="duration" i]:not([class*="progress"]):not([class*="bar"]),
+[class*="endTime" i],
+[class*="end-time" i],
+[class*="total-time" i],
+[class*="totalTime" i] {
+  visibility: hidden !important;
+}
